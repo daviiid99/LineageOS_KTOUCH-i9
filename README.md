@@ -5,7 +5,11 @@
 This is a W.I.P project to bring stable LineageOS roms to this mediatek phone<br/>
 For now just use this builds for testing or fun, hardware/software bugs are present
 
-You can grab the latest builds from <b><a href="https://github.com/daviiid99/LineageOS_KTOUCH-i9/releases">Releases</a></b>
+## Updates History
+
+|   Date                 | Download                  |
+| :----------------------| :-------------------------------- |
+|20210808                |    <a href="https://github.com/daviiid99/LineageOS_KTOUCH-i9/releases/tag/20210808">Lineage-17.1-20210807-UNOFFICIAL-i9.zip</a>
 
 # Sources
 <b><a href="https://github.com/daviiid99/android_device_ktouch_i9">Device tree</a><br/></b>
