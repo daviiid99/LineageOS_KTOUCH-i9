@@ -14,5 +14,5 @@ For now just use this builds for testing or fun, hardware/software bugs are pres
 
 # Sources
 <b><a href="https://github.com/daviiid99/android_device_ktouch_i9">Device tree</a><br/></b>
-<b>Kernel Source?<br/>
+<b><a href="https://github.com/daviiid99/kernel_ktouch_i9">Kernel Source</a></b><br/>
 <b><a href="https://github.com/daviiid99/android_vendor_ktouch_i9">Vendor Tree</a></b>
