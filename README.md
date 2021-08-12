@@ -22,6 +22,8 @@ git clone -b vendor_mediatek_Q https://github.com/daviiid99/LineageOS_KTOUCH-i9.
 patch -d external/skia -p1 < device/ktouch/i9/patches/external/skia/0001-GrGLCaps-allow-ignoring-vendor-supplied-texture-swiz.patch
 patch -d frameworks/base -p1 < device/ktouch/i9/patches/frameworks/base/0001-hwui-add-dependency-on-libbase.patch
 patch -d frameworks/base -p1 < device/ktouch/i9/patches/frameworks/base/0002-Fix-crash-on-some-devices-by-checking-for-null-clien.patch
+patch -d frameworks/av -p1 < device/ktouch/i9/patches/frameworks/av/0009-Allow-graceful-degradation-of-MediaProfile-with-brok.patch
+patch -d frameworks/av -p1 < device/ktouch/i9/patches/frameworks/av/0023-NuPlayerRenderer-Reset-negative-media-time-to-zero.patch
 patch -d frameworks/opt/net/wifi -p1 < device/ktouch/i9/patches/frameworks/opt/net/wifi/0001-Restore-O-O-MR1-behaviour-of-initing-ifaces-before-s.patch
 patch -d system/core -p1 < device/ktouch/i9/patches/system/core/0001-rootdir-add-support-for-custom-ld-template.patch
 
