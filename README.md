@@ -16,9 +16,6 @@ source build/envsetup.sh
 #Repos
 git clone -b device_tree_Q https://github.com/daviiid99/LineageOS_KTOUCH-i9.git device/ktouch/i9
 git clone -b vendor_mediatek_Q https://github.com/daviiid99/LineageOS_KTOUCH-i9.git  vendor/mediatek
-
-git clone  -b vendor_tree_VNDK27 https://github.com/daviiid99/LineageOS_KTOUCH-i9.git vendor/ktouch/i9
-or
 git clone  -b vendor_tree_VNDK28 https://github.com/daviiid99/LineageOS_KTOUCH-i9.git vendor/ktouch/i9
 
 #Patches
