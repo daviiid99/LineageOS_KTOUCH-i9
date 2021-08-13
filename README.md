@@ -14,10 +14,24 @@ repo sync
 source build/envsetup.sh
 
 #Repos
+git clone -b device_tree_stable https://github.com/daviiid99/LineageOS_KTOUCH-i9.git device/ktouch/i9
+git clone -b vendor_mediatek_Q https://github.com/daviiid99/LineageOS_KTOUCH-i9.git  vendor/mediatek
+git clone  -b vendor_tree_VNDK27 https://github.com/daviiid99/LineageOS_KTOUCH-i9.git vendor/ktouch/i9
+
+## Build Rules (Q) (Testing)
+```
+#Init LineageOS
+mkdir -p ~/android/lineage&&cd ~/android/lineage
+repo init -u https://github.com/LineageOS/android.git -b lineage-17.1
+repo sync
+source build/envsetup.sh
+
+#Repos
 git clone -b device_tree_Q https://github.com/daviiid99/LineageOS_KTOUCH-i9.git device/ktouch/i9
 git clone -b vendor_mediatek_Q https://github.com/daviiid99/LineageOS_KTOUCH-i9.git  vendor/mediatek
 git clone  -b vendor_tree_VNDK28 https://github.com/daviiid99/LineageOS_KTOUCH-i9.git vendor/ktouch/i9
 git clone  -b vendor_tree_SAR__VNDK28 https://github.com/daviiid99/LineageOS_KTOUCH-i9.git vendor/ktouch/sar
+
 
 #Patches
 patch -d external/skia -p1 < device/ktouch/i9/patches/external/skia/0001-GrGLCaps-allow-ignoring-vendor-supplied-texture-swiz.patch
