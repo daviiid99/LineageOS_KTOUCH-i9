@@ -17,6 +17,16 @@ source build/envsetup.sh
 git clone -b device_tree_stable https://github.com/daviiid99/LineageOS_KTOUCH-i9.git device/ktouch/i9
 git clone -b vendor_mediatek_Q https://github.com/daviiid99/LineageOS_KTOUCH-i9.git  vendor/mediatek
 git clone  -b vendor_tree_VNDK27 https://github.com/daviiid99/LineageOS_KTOUCH-i9.git vendor/ktouch/i9
+
+#Patches
+patch -d external/skia -p1 < device/ktouch/i9/patches/external/skia/0001-GrGLCaps-allow-ignoring-vendor-supplied-texture-swiz.patch
+patch -d frameworks/base -p1 < device/ktouch/i9/patches/frameworks/base/0001-hwui-add-dependency-on-libbase.patch
+patch -d frameworks/base -p1 < device/ktouch/i9/patches/frameworks/base/0002-Fix-crash-on-some-devices-by-checking-for-null-clien.patch
+patch -d frameworks/opt/net/wifi -p1 < device/ktouch/i9/patches/frameworks/opt/net/wifi/0001-Restore-O-O-MR1-behaviour-of-initing-ifaces-before-s.patch
+patch -d system/core -p1 < device/ktouch/i9/patches/system/core/0001-rootdir-add-support-for-custom-ld-template.patch
+
+#Build
+brunch i9
 ```
 
 ## Build Rules (Q) (Testing)
@@ -32,7 +42,6 @@ git clone -b device_tree_Q https://github.com/daviiid99/LineageOS_KTOUCH-i9.git 
 git clone -b vendor_mediatek_Q https://github.com/daviiid99/LineageOS_KTOUCH-i9.git  vendor/mediatek
 git clone  -b vendor_tree_VNDK28 https://github.com/daviiid99/LineageOS_KTOUCH-i9.git vendor/ktouch/i9
 git clone  -b vendor_tree_SAR__VNDK28 https://github.com/daviiid99/LineageOS_KTOUCH-i9.git vendor/ktouch/sar
-```
 
 #Patches
 patch -d external/skia -p1 < device/ktouch/i9/patches/external/skia/0001-GrGLCaps-allow-ignoring-vendor-supplied-texture-swiz.patch
@@ -44,6 +53,8 @@ patch -d system/core -p1 < device/ktouch/i9/patches/system/core/0001-rootdir-add
 #Build
 brunch i9
 ```
+
+
 
 ## Updates History
 
