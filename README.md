@@ -45,8 +45,7 @@ git clone  -b vendor_tree_VNDK27 https://github.com/daviiid99/LineageOS_KTOUCH-i
 #Patches
 patch -d external/skia -p1 < device/ktouch/i9/patches/external/skia/0001-GrGLCaps-allow-ignoring-vendor-supplied-texture-swiz.patch
 patch -d frameworks/base -p1 < device/ktouch/i9/patches/frameworks/base/0023-On-old-inits-A-only-devices-multi-sim-basedband-prop.patch
-patch -d frameworks/opt/net/wifi -p1 < device/ktouch/i9/patches/frameworks/opt/net/wifi/0001-Restore-O-O-MR1-behaviour-of-initing-ifaces-before-s.patch
-patch -d system/core -p1 < device/ktouch/i9/patches/system/core/0001-rootdir-add-support-for-custom-ld-template.patch
+patch -d frameworks/opt/net/wifi -p1 < device/ktouch/i9/patches/frameworks/opt/net/wifi/0003-Restore-O-O-MR1-behaviour-of-initing-ifaces-before-s.patch
 
 #Build
 brunch i9
