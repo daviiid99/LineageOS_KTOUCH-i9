@@ -5,7 +5,7 @@
 This is a W.I.P project to bring stable LineageOS roms to this mediatek phone<br/>
 For now just use this builds for testing or fun, hardware/software bugs are present
 
-## Build Rules (Q)
+## Build Rules (Q) (Stable)
 ```
 #Init LineageOS
 mkdir -p ~/android/lineage&&cd ~/android/lineage
@@ -17,6 +17,7 @@ source build/envsetup.sh
 git clone -b device_tree_stable https://github.com/daviiid99/LineageOS_KTOUCH-i9.git device/ktouch/i9
 git clone -b vendor_mediatek_Q https://github.com/daviiid99/LineageOS_KTOUCH-i9.git  vendor/mediatek
 git clone  -b vendor_tree_VNDK27 https://github.com/daviiid99/LineageOS_KTOUCH-i9.git vendor/ktouch/i9
+```
 
 ## Build Rules (Q) (Testing)
 ```
@@ -31,7 +32,7 @@ git clone -b device_tree_Q https://github.com/daviiid99/LineageOS_KTOUCH-i9.git 
 git clone -b vendor_mediatek_Q https://github.com/daviiid99/LineageOS_KTOUCH-i9.git  vendor/mediatek
 git clone  -b vendor_tree_VNDK28 https://github.com/daviiid99/LineageOS_KTOUCH-i9.git vendor/ktouch/i9
 git clone  -b vendor_tree_SAR__VNDK28 https://github.com/daviiid99/LineageOS_KTOUCH-i9.git vendor/ktouch/sar
-
+```
 
 #Patches
 patch -d external/skia -p1 < device/ktouch/i9/patches/external/skia/0001-GrGLCaps-allow-ignoring-vendor-supplied-texture-swiz.patch
