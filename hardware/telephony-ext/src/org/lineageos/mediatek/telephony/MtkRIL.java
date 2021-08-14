@@ -152,7 +152,7 @@ public class MtkRIL extends RIL {
         RILRequest rr = null;
         
          if (radioProxy2 != null || radioProxy3 != null) {
-            rr = obtainRequestMtk(2016 /* RIL_REQUEST_SET_CALL_INDICATION */, null, mRILDefaultWorkSource);
+            rr = obtainRequestMtk(2016 /* RIL_REQUEST_SET_CALL_INDICATION */, null);
             riljLogMtk(rr.getSerial() + "> " + "setCallIndication");
         
         }
