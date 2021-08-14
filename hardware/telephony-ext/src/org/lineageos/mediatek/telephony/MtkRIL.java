@@ -150,9 +150,6 @@ public class MtkRIL extends RIL {
         vendor.mediatek.hardware.radio.V3_0.IRadio radioProxy3 = getRadioProxyMtk3();
         vendor.mediatek.hardware.radio.V2_0.IRadio radioProxy2 = getRadioProxyMtk2();
         RILRequest rr = null;
-        if (radioProxy2 != null || radioProxy3 != null) {
-            rr = obtainRequestMtk(2016 /* RIL_REQUEST_SET_CALL_INDICATION */, null, mRILDefaultWorkSource);
-            riljLogMtk(rr.getSerial() + "> " + "setCallIndication");
         }
 
         if (radioProxy3 != null) {
