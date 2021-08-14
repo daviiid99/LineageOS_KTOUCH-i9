@@ -59,14 +59,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libldacBT_dec \
     libbtconfigstore
-
-# Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext \
-    mtk-telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
     
 # Trust HAL
 PRODUCT_PACKAGES += \
